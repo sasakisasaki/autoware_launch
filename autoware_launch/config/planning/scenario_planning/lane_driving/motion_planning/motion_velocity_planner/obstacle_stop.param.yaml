@@ -32,17 +32,17 @@
 
       obstacle_filtering:
         object_type:
-          pointcloud: false
+          pointcloud: true
 
           inside:
-            unknown: true
-            car: true
-            truck: true
-            bus: true
-            trailer: true
-            motorcycle: true
-            bicycle: true
-            pedestrian: true
+            unknown: false
+            car: false
+            truck: false
+            bus: false
+            trailer: false
+            motorcycle: false
+            bicycle: false
+            pedestrian: false
 
           outside:
             unknown: false

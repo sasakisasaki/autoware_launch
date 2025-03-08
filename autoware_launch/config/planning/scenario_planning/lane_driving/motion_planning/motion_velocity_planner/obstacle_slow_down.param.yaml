@@ -33,14 +33,14 @@
       obstacle_filtering:
         object_type:
           unknown: false
-          car: true
-          truck: true
-          bus: true
-          trailer: true
-          motorcycle: true
-          bicycle: true
-          pedestrian: true
-          pointcloud: false
+          car: false
+          truck: false
+          bus: false
+          trailer: false
+          motorcycle: false
+          bicycle: false
+          pedestrian: false
+          pointcloud: true
 
         pointcloud:
           pointcloud_voxel_grid_x: 0.05
