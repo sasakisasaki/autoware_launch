@@ -6,6 +6,7 @@ files:
   - { path: $(dirname)/planning.yaml }
   - { path: $(dirname)/system.yaml }
   - { path: $(dirname)/vehicle.yaml }
+  - { path: $(dirname)/api.yaml }
 
 units:
   - path: /autoware/modes/local
@@ -15,6 +16,7 @@ units:
       - { type: link, link: /autoware/system }
       - { type: link, link: /autoware/control/local }
       - { type: link, link: /adapi/mrm_request/delegate }
+      - { type: link, link: /adapi/manual/local }
 
   - path: /autoware/modes/remote
     type: and
@@ -23,6 +25,7 @@ units:
       - { type: link, link: /autoware/system }
       - { type: link, link: /autoware/control/remote }
       - { type: link, link: /adapi/mrm_request/delegate }
+      - { type: link, link: /adapi/manual/remote }
 
   - path: /autoware/modes/stop
     type: and

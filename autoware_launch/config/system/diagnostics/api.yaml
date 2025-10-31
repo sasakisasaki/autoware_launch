@@ -1,0 +1,20 @@
+units:
+  - path: /adapi/manual/local
+    type: and
+    list:
+      - { type: link, link: /adapi/manual/local/heartbeat }
+
+  - path: /adapi/manual/remote
+    type: and
+    list:
+      - { type: link, link: /adapi/manual/remote/heartbeat }
+
+  - path: /adapi/manual/local/heartbeat
+    type: diag
+    node: /adapi/node/manual/local
+    name: heartbeat
+
+  - path: /adapi/manual/remote/heartbeat
+    type: diag
+    node: /adapi/node/manual/remote
+    name: heartbeat
